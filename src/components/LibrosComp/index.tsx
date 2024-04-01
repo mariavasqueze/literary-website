@@ -35,7 +35,7 @@ function LibrosComponent() {
     <div className="libros-comp">
       <h3 className="blue-title">Libros</h3>
       <button className="">
-        Ver Más <img src="/assets/images/arrow-thin.svg" />
+        Ver Más <Image src="/assets/images/arrow-thin.svg" alt={""} />
       </button>
       <Slider {...settings}>
         {books.map((book, index) => {
