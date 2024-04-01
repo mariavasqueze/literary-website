@@ -1,3 +1,5 @@
+@import "./constants.scss";
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -86,13 +88,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #ffffff;
+  background: #ffffff;
 }
 
 a {
@@ -104,4 +101,26 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.blue-title {
+  color: $darkBlue;
+  font-family: $cardoFont;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 150%;
+}
+
+.yellow-divider {
+  height: 4px;
+  width: 55px;
+  background: #ffca42;
+  border-radius: 12px;
+}
+
+.blue-divider {
+  height: 4px;
+  width: 55px;
+  background: #1b3764;
+  border-radius: 12px;
 }

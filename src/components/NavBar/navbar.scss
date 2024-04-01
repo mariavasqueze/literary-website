@@ -1,0 +1,23 @@
+@import "../../styles/constants.scss";
+
+.navbar {
+  font-family: $cardoFont;
+  font-size: 18px;
+  color: $primaryBlack;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 112px;
+
+  .logo {
+    height: 91px;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

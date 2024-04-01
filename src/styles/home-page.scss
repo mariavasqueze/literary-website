@@ -1,0 +1,113 @@
+@import "./constants.scss";
+
+.author-name {
+  width: 100%;
+  text-align: center;
+  padding: 150px 0;
+  .name {
+    font-size: 70px;
+    font-weight: 700;
+    background: $GreyGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.escribiendo {
+  width: 100%;
+  padding: 260px 112px;
+  background: $lightBlueBg;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+
+  .main-img {
+    max-height: 550px;
+    width: fit-content;
+  }
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    .grey-desc {
+      color: $lightGrey;
+      font-family: $interFont;
+      font-size: 20px;
+      line-height: 180%;
+    }
+    .metrics {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      padding-top: 20px;
+
+      .vertical-divider {
+        background-color: $mainYellow;
+        width: 1px;
+        height: 25px;
+      }
+      .number {
+        font-family: $cardoFont;
+        font-size: 55px;
+        line-height: 120%;
+        color: $darkBlue;
+        font-weight: 400;
+      }
+      .desc {
+        font-family: $interFont;
+        font-size: 18px;
+        line-height: 170%;
+        color: $lightGrey;
+      }
+    }
+  }
+}
+
+.contacto {
+  padding: 36px 112px;
+  background-color: $darkBlue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 160px;
+
+  .reading-img {
+    max-height: 453px;
+    width: fit-content;
+  }
+
+  .contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    .contacto-title {
+      color: $primaryWhite;
+      font-family: $cardoFont;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 120%;
+    }
+
+    .contacto-desc {
+      color: $lightGreyBlue;
+      font-family: $interFont;
+      line-height: 180%;
+      font-size: 20px;
+    }
+
+    .yellow-white-btn {
+      margin-top: 20px;
+      border: 1px solid $mainYellow;
+      background-color: transparent;
+      color: $primaryWhite;
+      font-family: $cardoFont;
+      line-height: 125%;
+      font-size: 22px;
+      padding: 20px 53px;
+      max-width: 236px;
+    }
+  }
+}

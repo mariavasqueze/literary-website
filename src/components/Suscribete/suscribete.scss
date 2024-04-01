@@ -1,0 +1,64 @@
+@import "../../styles/constants.scss";
+
+.sub-wrapper {
+  padding: 118px 112px;
+
+  .suscribete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $mainYellow;
+    padding: 120px 180px;
+    text-align: center;
+
+    .main-title {
+      font-family: $cardoFont;
+      font-size: 45px;
+      line-height: 120%;
+      color: $darkBlue;
+    }
+
+    .sub-desc {
+      font-family: $interFont;
+      font-size: 20px;
+      line-height: 180%;
+      color: $darkBlue;
+    }
+
+    .input-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      width: 100%;
+
+      input {
+        height: 50px;
+        border: none;
+        padding: 0 20px;
+        font-family: $interFont;
+        font-size: 18px;
+        line-height: 180%;
+        color: $lightGrey;
+        background-color: $primaryWhite;
+        height: 65px;
+      }
+
+      .btn {
+        max-width: 300px;
+        height: 64px;
+        border: none;
+        font-family: $cardoFont;
+        font-size: 20px;
+        line-height: 125%;
+        color: $primaryWhite;
+        background: $darkBlue;
+        cursor: pointer;
+      }
+    }
+  }
+}

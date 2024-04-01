@@ -1,95 +1,76 @@
+import "../styles/home-page.scss";
+import Layout from "@/components/Layout/Layout";
+
+import ImageHero from "@/components/ImageHero";
+import LibrosComponent from "@/components/LibrosComp";
+import BlogComponent from "@/components/BlogComp";
+
+import { cinzel } from "./layout";
 import Image from "next/image";
-import styles from "./page.module.css";
+import Suscribete from "@/components/Suscribete";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+    <Layout>
+      <ImageHero />
+      <section className="author-name">
+        <p className={`${cinzel.className} name`}>Carlos Vasquez-Zawadski</p>
+      </section>
+      <section className="escribiendo">
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/assets/images/escritor.png"
+          className="main-img"
+          alt="Escribiendo"
+          width={800}
+          height={600}
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <div className="right-content">
+          <p className="blue-title">Escribiendo con Carlos</p>
+          <div className="yellow-divider" />
+          <p className="grey-desc">
+            All the Lorem Ipsum generators on the Internet tend to repeated
+            predefined chunks as necessary, making this the first true value
+            generator on the Internet. It uses a dictionary of over 200 Latin
+            words, combined with a handful.
           </p>
-        </a>
-      </div>
-    </main>
+          <div className="metrics">
+            <div className="metric">
+              <p className="number">42</p>
+              <p className="desc">Libros Publicados</p>
+            </div>
+            <div className="vertical-divider" />
+            <div className="metric">
+              <p className="number">31</p>
+              <p className="desc">Premios Literarios</p>
+            </div>
+            <div className="metric">
+              <p className="number">101</p>
+              <p className="desc">Mundos Creados</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <LibrosComponent />
+      <section className="contacto">
+        <Image
+          src="/assets/images/reading-graphic.png"
+          className="reading-img"
+          alt="Contacto"
+          width={800}
+          height={600}
+        />
+        <div className="contacto-info">
+          <p className="contacto-title">Ponte en Contacto</p>
+          <div className="yellow-divider" />
+          <p className="contacto-desc">
+            This the first true value generator on the Internet. It uses alphas
+            dictionary of over 200 Latin words.
+          </p>
+          <button className="yellow-white-btn">Contactanos</button>
+        </div>
+      </section>
+      <BlogComponent />
+      <Suscribete />
+    </Layout>
   );
 }
