@@ -5,11 +5,6 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const cinzel = Cinzel_Decorative({
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  style: ["normal"],
-});
 const cabin = Cabin({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -49,7 +44,7 @@ export default function RootLayout({
         />
       </Head>
       <body
-        className={`${inter.className} ${cardo.className} ${cabin.className} ${cinzel.className}`}
+        className={`${inter.className} ${cardo.className} ${cabin.className}`}
       >
         {children}
       </body>

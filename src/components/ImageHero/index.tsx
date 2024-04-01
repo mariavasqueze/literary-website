@@ -1,4 +1,5 @@
 import "./image-hero.scss";
+import Image from "next/image";
 
 const images = [
   {
@@ -34,7 +35,7 @@ function ImageHero() {
       <div className="image-gallery">
         {images.map((image, index) => (
           <a href={image.link} className="image-container" key={index}>
-            <img src={image.src} alt={image.alt} className="gallery-image" />
+            <Image src={image.src} alt={image.alt} className="gallery-image" />
           </a>
         ))}
       </div>

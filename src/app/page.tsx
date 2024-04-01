@@ -1,13 +1,18 @@
 import "../styles/home-page.scss";
 import Layout from "@/components/Layout/Layout";
-
+import { Cinzel_Decorative } from "next/font/google";
 import ImageHero from "@/components/ImageHero";
 import LibrosComponent from "@/components/LibrosComp";
 import BlogComponent from "@/components/BlogComp";
 
-import { cinzel } from "./layout";
 import Image from "next/image";
 import Suscribete from "@/components/Suscribete";
+
+const cinzel = Cinzel_Decorative({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  style: ["normal"],
+});
 
 export default function Home() {
   return (
