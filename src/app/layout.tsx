@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         {/* <link rel="icon" href="/assets/images/mainLogo.svg" /> */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/assets/images/mainLogo.svg" sizes="any" />
         <link
           rel="stylesheet"
           type="text/css"

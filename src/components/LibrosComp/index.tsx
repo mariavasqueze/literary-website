@@ -26,16 +26,22 @@ function LibrosComponent() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className="libros-comp">
       <h3 className="blue-title">Libros</h3>
-      <button className="">
-        Ver Más <Image src="/assets/images/arrow-thin.svg" alt={""} />
+      <button className="yellow-btn">
+        Ver Más{" "}
+        <Image
+          src="/assets/images/arrow-thin.svg"
+          alt={""}
+          width={30}
+          height={30}
+        />
       </button>
       <Slider {...settings}>
         {books.map((book, index) => {
@@ -52,21 +58,22 @@ function BookItem({ book }: BookItemProps) {
   return (
     <div className="book-wrapper">
       <Image
-        src={`/assets/images/${book.img}`}
+        className="book-img"
+        src={`/assets/images/libros/${book.img}`}
         alt={book.title}
         width={200}
         height={300}
       />
-      <h4>{book.title}</h4>
-      <p>{book.shortDesc}</p>
+      <h4 className="book-title">{book.title}</h4>
+      <p className="book-desc">{book.shortDesc}</p>
     </div>
   );
 }
 
 function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
-    <div>
+    <div className={className} onClick={() => onClick()}>
       <Image
         src="/assets/images/arrow-right.svg"
         alt="Next"
@@ -78,9 +85,9 @@ function SampleNextArrow(props: any) {
 }
 
 function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
-    <div>
+    <div className={className} onClick={() => onClick()}>
       <Image
         src="/assets/images/arrow-left.svg"
         alt="Next"

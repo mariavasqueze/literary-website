@@ -26,7 +26,7 @@
   }
 
   .image-container:hover {
-    flex: 2; /* Flex-grow larger than 1 will make the image grow more */
+    flex: 1.5; /* Flex-grow larger than 1 will make the image grow more */
   }
 
   .image-container:hover .gallery-image {
@@ -37,6 +37,6 @@
   /* You may need to adjust the flex-basis of the non-hovered items so they shrink appropriately */
   .image-container:not(:hover) {
     flex: 1;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
