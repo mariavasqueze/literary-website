@@ -1,15 +1,16 @@
 export const books = [
   {
-    id: 1,
+    id: "cuerpos-de-ebano",
     img: "cuerpos.jpg",
     title: "Cuerpos de Ébano",
     shortDesc:
       "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
     description: "A look at the stars and beyond",
     link: "https://www.google.com",
+    award: "testing hereeee",
   },
   {
-    id: 2,
+    id: "august-rodin",
     img: "rodin.jpg",
     title: "Auguste Rodin",
     shortDesc:
@@ -18,7 +19,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 3,
+    id: "la-oreja-erotica-de-van-gogh",
     img: "gogh.jpg",
     title: "La oreja erótica de Van Gogh",
     shortDesc:
@@ -27,7 +28,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 4,
+    id: "percusiones",
     img: "percusiones.jpg",
     title: "Percusiones",
     shortDesc:
@@ -36,7 +37,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 5,
+    id: "catalina-de-indias",
     img: "catalina.jpg",
     title: "Catalina de Indias",
     shortDesc: "Drama Historico en tres actos",
@@ -44,7 +45,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 6,
+    id: "cartografias",
     img: "cartografias.jpg",
     title: "Cartografías Culturales",
     shortDesc:
@@ -53,7 +54,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 7,
+    id: "estremecimientos",
     img: "estremecimientos.jpg",
     title: "Estremecimientos",
     shortDesc:
@@ -62,7 +63,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 8,
+    id: "la-abuela-perdio-recuerdo",
     img: "abuela.jpg",
     title: "La abuela perdió un recuerdo",
     shortDesc:
@@ -71,7 +72,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 9,
+    id: "las-suaves-manos-de-eros",
     img: "suaves.jpg",
     title: "Las Suaves manos de Eros y El Vino puro de Dionisios",
     shortDesc:
@@ -80,7 +81,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 10,
+    id: "canciones-para-coros-y-cafe-suave",
     img: "canciones.jpg",
     title: "Canciones para coros y Café suave",
     shortDesc:
@@ -89,8 +90,8 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 11,
-    img: "rafico.jpg",
+    id: "rafico-y-su-potrillo-de-mar",
+    img: "rafico.jpeg",
     title: "Rafico y su potrillo de mar",
     shortDesc:
       "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
@@ -98,7 +99,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 12,
+    id: "minutauro",
     img: "minutauro.jpg",
     title: "MinuTauro",
     shortDesc:
@@ -107,7 +108,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 13,
+    id: "espirales",
     img: "espirales.jpg",
     title: "Espirales",
     shortDesc: "Escritura ininterrumpida",
@@ -115,7 +116,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 14,
+    id: "bocas-de-agua-y-fuego",
     img: "bocas.jpg",
     title: "Bocas de agua y fuego",
     shortDesc:
@@ -124,7 +125,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 15,
+    id: "rotaciones",
     img: "rotaciones.jpg",
     title: "Rotaciones",
     shortDesc:
@@ -133,7 +134,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 16,
+    id: "la-linea-sonada-del-horizonte",
     img: "linea.jpg",
     title: "La línea soñada del horizonte",
     shortDesc:
@@ -142,25 +143,44 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 17,
+    id: "sol-partido-en-la-naranja",
     img: "sol.jpg",
-    title: "Sol partifo en la naranja",
+    title: "Sol partido en la naranja",
     shortDesc:
       "The point of using Lorem Ipsum hiter of that using making it look like others readable wi",
     description: "A look at the stars and beyond",
     link: "https://www.google.com",
   },
   {
-    id: 18,
+    id: "mi-amigo-el-griot-contador-de-historias",
     img: "griot.jpg",
     title: "Mi amigo el griot, contador de historias",
     shortDesc:
       "The point of using Lorem Ipsum hiter of that using making it look like others readable wi",
-    description: "A look at the stars and beyond",
-    link: "https://www.google.com",
+    description:
+      "Puerto de Tumala, isla del Morro: palpitantes fogatas frente a los ocasos multicolores del mar Pacífico. Enrique –un griot contador de historias—narra apariciones y desapariciones del buque fantasma, el Maravelí, que navega en altas noches. ¿Quiénes viajan como almas en pena sin llegar a puerto alguno en ese barco misterioso, cuya visión puede dejarnos ciegos? Enrique, nacido en Barbacoas –poblado legendario de oro--, cuenta a un grupo de jóvenes historias reales y maravillosas del Litoral Pacífico, que permanecerán en su memoria.",
+    link: "https://www.panamericana.com.co/mi-amigo-el-griot-contador-de-historias-634836/p",
+    details: [
+      {
+        type: "Editorial",
+        content: "Panamericana",
+      },
+      {
+        type: "Ilustraciones",
+        content: "Oscar Soacha",
+      },
+      {
+        type: "Publicado en",
+        content: "Bogotá, 2021",
+      },
+      {
+        type: "ISBN",
+        content: "978-958-30-6446-3",
+      },
+    ],
   },
   {
-    id: 19,
+    id: "puerto-azul",
     img: "puerto.jpg",
     title: "Puerto azul",
     shortDesc:
@@ -169,7 +189,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 20,
+    id: "peregrino-de-luz-y-mar",
     img: "peregrino.jpg",
     title: "peregrino de luz y mar",
     shortDesc:
@@ -178,7 +198,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 21,
+    id: "colores-de-la-memoria",
     img: "colores.jpg",
     title: "Colores de la memoria",
     shortDesc: "50 poetas Caribe y Pacífico",
@@ -186,7 +206,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 22,
+    id: "travesuras-de-cosimo",
     img: "cosimo.jpg",
     title: "Travesuras de Cósimo",
     shortDesc:
@@ -195,7 +215,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 23,
+    id: "desnudar-los-nombres",
     img: "desnudar.jpg",
     title: "desnudar los nombres",
     shortDesc:
@@ -204,7 +224,7 @@ export const books = [
     link: "https://www.google.com",
   },
   {
-    id: 24,
+    id: "amares",
     img: "amares.jpg",
     title: "Amares",
     shortDesc:

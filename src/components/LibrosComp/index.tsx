@@ -1,20 +1,25 @@
 "use client";
 
 import "./libros-comp.scss";
+
+import { useRouter } from "next/navigation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Slider from "react-slick";
 import Image from "next/image";
-
 import { books } from "./books";
+import Link from "next/link";
 
 type Book = {
-  id: number;
+  id: string;
   img: string;
   title: string;
   shortDesc: string;
   description: string;
   link: string;
+  award?: string;
+  details?: any[];
 };
 
 interface BookItemProps {
@@ -34,15 +39,11 @@ function LibrosComponent() {
   return (
     <div className="libros-comp">
       <h3 className="blue-title">Libros</h3>
-      <button className="yellow-btn">
-        Ver Más{" "}
-        <Image
-          src="/assets/images/arrow-thin.svg"
-          alt={""}
-          width={30}
-          height={30}
-        />
-      </button>
+      <Link href="/libros" className="right-side">
+        <button>
+          <span>Ver Más</span>
+        </button>
+      </Link>
       <Slider {...settings}>
         {books.map((book, index) => {
           return <BookItem book={book} key={index} />;
@@ -55,8 +56,12 @@ function LibrosComponent() {
 export default LibrosComponent;
 
 function BookItem({ book }: BookItemProps) {
+  const router = useRouter();
   return (
-    <div className="book-wrapper">
+    <div
+      className="book-wrapper"
+      onClick={() => router.push(`/libros/${book.id}`)}
+    >
       <Image
         className="book-img"
         src={`/assets/images/libros/${book.img}`}
@@ -73,7 +78,7 @@ function BookItem({ book }: BookItemProps) {
 function SampleNextArrow(props: any) {
   const { className, onClick } = props;
   return (
-    <div className={className} onClick={() => onClick()}>
+    <div className={"arrow-next"} onClick={onClick}>
       <Image
         src="/assets/images/arrow-right.svg"
         alt="Next"
@@ -87,7 +92,7 @@ function SampleNextArrow(props: any) {
 function SamplePrevArrow(props: any) {
   const { className, onClick } = props;
   return (
-    <div className={className} onClick={() => onClick()}>
+    <div className={"arrow-prev"} onClick={onClick}>
       <Image
         src="/assets/images/arrow-left.svg"
         alt="Next"

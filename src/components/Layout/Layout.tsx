@@ -2,10 +2,16 @@ import React from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 
-function Layout({ children }: { children: React.ReactNode }) {
+function Layout({
+  type,
+  children,
+}: {
+  type?: "blue";
+  children: React.ReactNode;
+}) {
   return (
     <>
-      <NavBar />
+      <NavBar type={type} />
       <main>{children}</main>
       <Footer />
     </>

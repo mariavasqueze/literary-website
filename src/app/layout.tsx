@@ -17,7 +17,7 @@ const cardo = Cardo({
 });
 
 export const metadata: Metadata = {
-  title: "Carlos Vasquez-Zawadski",
+  title: "Carlos Vasquez-Zawadzki",
   description: "Web app about books of author Carlos Vasquez",
 };
 

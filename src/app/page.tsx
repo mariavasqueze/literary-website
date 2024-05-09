@@ -19,7 +19,7 @@ export default function Home() {
     <Layout>
       <ImageHero />
       <section className="author-name">
-        <p className={`${cinzel.className} name`}>Carlos Vasquez-Zawadski</p>
+        <p className={`${cinzel.className} name`}>Carlos Vasquez-Zawadzki</p>
       </section>
       <section className="escribiendo">
         <Image

@@ -6,6 +6,11 @@
   color: $primaryBlack;
   font-weight: 500;
 
+  &.blue-nav {
+    background-color: $darkBlue;
+    color: $primaryWhite;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,11 +18,31 @@
 
   .logo {
     height: 91px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &.blue-logo {
+      filter: invert(1);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .right-side {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    .nav-link {
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: $mainYellow;
+        opacity: 0.8;
+      }
+    }
   }
 }
