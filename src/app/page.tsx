@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
       <LibrosComponent />
-      <section className="contacto">
+      {/* <section className="contacto">
         <Image
           src="/assets/images/reading-graphic.png"
           className="reading-img"
@@ -73,7 +73,7 @@ export default function Home() {
           </p>
           <button className="yellow-white-btn">Contactanos</button>
         </div>
-      </section>
+      </section> */}
       <BlogComponent />
       <Suscribete />
     </Layout>

@@ -11,18 +11,19 @@ import Image from "next/image";
 import { books } from "./books";
 import Link from "next/link";
 
-type Book = {
+export type Book = {
   id: string;
   img: string;
   title: string;
   shortDesc: string;
   description: string;
   link: string;
+  category: string;
   award?: string;
   details?: any[];
 };
 
-interface BookItemProps {
+export interface BookItemProps {
   book: Book;
 }
 

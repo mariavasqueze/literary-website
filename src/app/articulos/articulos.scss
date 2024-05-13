@@ -1,0 +1,49 @@
+@import "../../styles/constants.scss";
+
+.articulos-wrap {
+  .title-section {
+    background-color: $darkBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0px 120px;
+
+    .articulos-title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 180%;
+      color: $primaryWhite;
+    }
+
+    .articulos-desc {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 180%;
+      color: $lightGreyBlue;
+      max-width: 50%;
+      text-align: center;
+    }
+  }
+
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .all-articulos {
+      width: 100%;
+      background-color: $lightBlueBg;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 120px 112px;
+      margin: auto;
+    }
+  }
+}

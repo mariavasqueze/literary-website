@@ -29,10 +29,10 @@ function NavBar({ type }: NavBarProps) {
         <a className="nav-link" href="/autor">
           Autor
         </a>
-        <a className="nav-link" href="/blog">
-          Blog
+        <a className="nav-link" href="/articulos">
+          Artículos
         </a>
-        <a className="nav-link" href="/contact">
+        <a className="nav-link" href="/contacto">
           Contacto
         </a>
       </div>

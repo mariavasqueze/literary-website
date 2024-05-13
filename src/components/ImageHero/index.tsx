@@ -1,8 +1,5 @@
-"use client";
-
 import "./image-hero.scss";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 const images = [
   {
@@ -33,15 +30,14 @@ const images = [
 ];
 
 function ImageHero() {
-  const router = useRouter();
   return (
     <div className="image-hero">
       <div className="image-gallery">
         {images.map((image, index) => (
           <a
+            href={`/libros/${image.link}`}
             className="image-container"
             key={index}
-            onClick={() => router.push(`/libros/${image.link}`)}
           >
             <Image
               src={image.src}
