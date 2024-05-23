@@ -24,10 +24,17 @@
 
     .content-wrap {
       z-index: 2;
-      padding: 60px 240px;
+      padding: 40px 40px;
       display: flex;
       align-items: center;
-      gap: 120px;
+      flex-direction: column;
+      gap: 60px;
+
+      @media screen and (min-width: 1024px) {
+        padding: 40px 240px;
+        gap: 120px;
+        flex-direction: row;
+      }
       .banner-content {
         display: flex;
         flex-direction: column;

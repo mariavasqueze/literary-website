@@ -1,7 +1,7 @@
 @import "../../styles/constants.scss";
 
 .blog-comp {
-  padding: 145px 112px;
+  padding: 80px 60px;
   background-color: $lightBlueBg;
   display: flex;
   flex-direction: column;
@@ -15,9 +15,14 @@
 
   .articles-wrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
     padding-top: 50px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 145px 112px;
   }
 }

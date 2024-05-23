@@ -8,7 +8,7 @@ export const books = [
     description: "A look at the stars and beyond",
     link: "https://www.google.com",
     award: "testing hereeee",
-    category: "Poesia",
+    category: "Novela",
   },
   {
     id: "august-rodin",
@@ -18,7 +18,7 @@ export const books = [
       "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
     description: "A look at the stars and beyond",
     link: "https://www.google.com",
-    category: "Poesia",
+    category: "Ensayo",
   },
   {
     id: "la-oreja-erotica-de-van-gogh",
@@ -113,7 +113,7 @@ export const books = [
     description:
       "Soledad o ‘Solita’, como la llaman familiarmente, posee una maravillosa memoria: a sus noventa o más años recuerda nombres e historias de ocho generaciones hacia atrás; geografías y paisajes, cumpleaños y días de fiesta… Todo, y un poco más. Pero, amiguitos, un día la abuela olvida algo importante, un secreto familiar. El tiempo de la casa se detiene. De pronto, sentada en su silla mecedora, ¡encuentra en el sueño su precioso recuerdo perdido! Ella misma nos lo cuenta.",
     link: "https://www.panamericana.com.co/la-abuela-perdio-un-recuerdo-608390/p",
-    category: "Poesia",
+    category: "Infantil",
     details: [
       {
         type: "Editorial",
@@ -168,7 +168,7 @@ export const books = [
     description:
       "Bebidas de la razón y la sinrazón: Londres, primero, y los Países Bajos, y París: los cafés son lugares de encuentros intelectuales. Allí, impone la bebida sobriedad a las sociedades y naciones –y desde el siglo XVIII-- se debaten fanatismos, supersticiones, condiciones de la mujer, amor, moral. Siglo de la Ilustración: enfoque empírico y escéptico, adiós a los dogmatismos y autoridades; bienvenida a la crítica; tolerancia y libertad de pensamiento. Beber café fomenta la agudeza y la claridad de pensar. Es bebida ideal para la Edad de la Razón. En Canciones para coros y café suave, el café vuelve a dialogar con la taberna (del vino y la cerveza), ésta última excluida del tiempo razonable. En el poemario se canta y se bebe café, cerveza y vino. Se conversa y se disfruta con todos los sentidos. Y aún se danza. Y el ambiente podrá devenir erótico, o bien, razonablemente erótico. Aquí, espacio abierto para el ser femenino y el masculino, y el humor; un poemario de sabrosura, pensamiento, afectos, verbo y humor. Un libro sobre la misma poesía y sus lenguajes creativos.",
     link: "https://www.google.com",
-    category: "Poesia",
+    category: "Ensayo",
     details: [
       {
         type: "ISBN",
@@ -186,7 +186,7 @@ export const books = [
     description:
       "En el Litoral Pacífico y Tumala, a los ojos de los niños, renacemos en las mañanas, a la salida del sol azafrán –sobre la línea del horizonte— y los transparentes azules celestes y marinos, que colman el océano. Veleros, canoas y remos, riman de olas el día. La mar nos dialoga. Y deidades de agua, tierra y aire, traen historias secretas de navegantes y pescadores. Somos risas y juegos; Las mujeres, cantos y memoria familiar. En grandes pechos y brazos negros se sostienen los días del trópico. El habla es melodiosa contando bondades y maldades, fiestas, trabajo y sacrificios. Y los caminos nuestros son de arena y agua, por ellos circulan maderas olorosas, oro y pesca. El Litoral Pacífico y Tumala son recuerdos de nanas y niños negros, de risas blancas y frescas. De pulpa de coco. Allí, palmeras, vientos, lluvias y tormentas, constituyen el universo del puerto. Sobre la casa paterna y sus techos de zinc rojo, duerme el tiempo, sin transcurrir, como en los sueños de cada mañana solar.",
     link: "https://leoindependiente.com/fichas/OE0117/rafico-y-su-potrillo-de-mar",
-    category: "Poesia",
+    category: "Infantil",
     details: [
       {
         type: "Editorial",
@@ -214,7 +214,7 @@ export const books = [
       "The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.",
     description: "A look at the stars and beyond",
     link: "https://www.google.com",
-    category: "Poesia",
+    category: "Ensayo",
   },
   {
     id: "espirales",
@@ -269,7 +269,7 @@ export const books = [
       "The point of using Lorem Ipsum hiter of that using making it look like others readable wi",
     description: "A look at the stars and beyond",
     link: "https://www.google.com",
-    category: "Poesia",
+    category: "Infantil",
   },
   {
     id: "sol-partido-en-la-naranja",
@@ -290,7 +290,7 @@ export const books = [
     description:
       "Puerto de Tumala, isla del Morro: palpitantes fogatas frente a los ocasos multicolores del mar Pacífico. Enrique –un griot contador de historias—narra apariciones y desapariciones del buque fantasma, el Maravelí, que navega en altas noches. ¿Quiénes viajan como almas en pena sin llegar a puerto alguno en ese barco misterioso, cuya visión puede dejarnos ciegos? Enrique, nacido en Barbacoas –poblado legendario de oro--, cuenta a un grupo de jóvenes historias reales y maravillosas del Litoral Pacífico, que permanecerán en su memoria.",
     link: "https://www.panamericana.com.co/mi-amigo-el-griot-contador-de-historias-634836/p",
-    category: "Poesia",
+    category: "Infantil",
     details: [
       {
         type: "Editorial",
@@ -371,7 +371,7 @@ export const books = [
     description:
       "Cósimo es un galgo italiano que vive en la ciudad de Bogotá. Junto a su dueña, Rocío, vive aventuras a medida que su círculo social va aumentando. Temas como el primer amor, la familia, las amistades e incluso el trabajo, se juntan en una historia familiar que tiene como objetivo valorar las pequeñas y valiosas cosas de la vida cotidiana junto a nuestras mascotas. Siguiendo la estructura de la literatura infantil, Carlos Vasquez-Zawadzki nos presenta una hermosa historia de amor, amistad y sensibilidad canina, una que acerca el lector a la perspectiva inocente que nuestros amigos peludos tienen sobre el mundo.",
     link: "https://www.google.com",
-    category: "Poesia",
+    category: "Infantil",
     details: [
       {
         type: "Editorial",

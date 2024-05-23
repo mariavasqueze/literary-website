@@ -3,29 +3,48 @@
 .author-name {
   width: 100%;
   text-align: center;
-  padding: 150px 0;
+  padding: 60px 0;
+
   .name {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     background: $GreyGradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @media screen and (min-width: 1024px) {
+    padding: 120px 0px;
+    .name {
+      font-size: 70px;
+    }
+  }
 }
 
 .escribiendo {
   width: 100%;
-  padding: 260px 112px;
+  padding: 80px 40px;
   background: $lightBlueBg;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 140px;
+  gap: 60px;
 
   .main-img {
-    max-height: 550px;
+    max-height: 400px;
     width: fit-content;
+    object-fit: contain;
   }
+  @media screen and (min-width: 1024px) {
+    padding: 260px 112px;
+    flex-direction: row;
+    gap: 140px;
+    .main-img {
+      max-height: 550px;
+    }
+  }
+
   .right-content {
     display: flex;
     flex-direction: column;
@@ -34,7 +53,7 @@
     .grey-desc {
       color: $lightGrey;
       font-family: $interFont;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 180%;
     }
     .metrics {
@@ -44,22 +63,39 @@
       padding-top: 20px;
 
       .vertical-divider {
+        display: none;
         background-color: $mainYellow;
         width: 1px;
         height: 25px;
       }
       .number {
         font-family: $cardoFont;
-        font-size: 55px;
+        font-size: 45px;
         line-height: 120%;
         color: $darkBlue;
         font-weight: 400;
       }
       .desc {
         font-family: $interFont;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 170%;
         color: $lightGrey;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .grey-desc {
+        font-size: 20px;
+      }
+      .metrics {
+        .vertical-divider {
+          display: block;
+        }
+        .number {
+          font-size: 55px;
+        }
+        .desc {
+          font-size: 18px;
+        }
       }
     }
   }
