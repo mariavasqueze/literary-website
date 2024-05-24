@@ -105,9 +105,14 @@
 
   .all-books-wrap {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(367px, 1fr));
+    grid-template-columns: 1fr;
     row-gap: 40px;
-    padding: 120px 112px;
+    padding: 60px;
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(auto-fill, minmax(367px, 1fr));
+      padding: 112px;
+    }
   }
 }
 
@@ -119,10 +124,15 @@
   .book-img-wrap {
     background: url("/assets/images/gradient-back.png");
     padding: 45px;
-    height: 457px;
-    width: 367px;
+    // height: 457px;
+    width: 320px;
     border-radius: 12px;
     transition: all 0.3s ease-in-out;
+
+    @media screen and (min-width: 1024px) {
+      height: 457px;
+      width: 367px;
+    }
 
     .book-img {
       width: 100%;

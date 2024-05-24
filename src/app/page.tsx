@@ -4,6 +4,7 @@ import { Cinzel_Decorative } from "next/font/google";
 import ImageHero from "@/components/ImageHero";
 import LibrosComponent from "@/components/LibrosComp";
 import BlogComponent from "@/components/BlogComp";
+import CarouselTop from "@/components/CarouselTop";
 
 import Image from "next/image";
 import Suscribete from "@/components/Suscribete";
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <Layout>
       <ImageHero />
+      <CarouselTop />
       <section className="author-name">
         <p className={`${cinzel.className} name`}>Carlos Vasquez-Zawadzki</p>
       </section>

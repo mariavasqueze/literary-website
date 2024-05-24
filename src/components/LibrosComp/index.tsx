@@ -49,17 +49,17 @@ function LibrosComponent() {
   };
   return (
     <div className="libros-comp">
-      <h3 className="blue-title">Libros</h3>
-      <Link href="/libros" className="right-side">
-        <button>
-          <span>Ver Más</span>
-        </button>
-      </Link>
+      <h3 className="blue-title libros-title">Libros</h3>
       <Slider {...settings}>
         {books.map((book, index) => {
           return <BookItem book={book} key={index} />;
         })}
       </Slider>
+      <Link href="/libros" className="right-side">
+        <button>
+          <span>Ver Todos</span>
+        </button>
+      </Link>
     </div>
   );
 }
@@ -91,7 +91,7 @@ function SampleNextArrow(props: any) {
   return (
     <div className={"arrow-next"} onClick={onClick}>
       <Image
-        src="/assets/images/arrow-right.svg"
+        src="/assets/images/arrow-right.png"
         alt="Next"
         width={50}
         height={50}
@@ -105,7 +105,7 @@ function SamplePrevArrow(props: any) {
   return (
     <div className={"arrow-prev"} onClick={onClick}>
       <Image
-        src="/assets/images/arrow-left.svg"
+        src="/assets/images/arrow-right.png"
         alt="Next"
         width={50}
         height={50}

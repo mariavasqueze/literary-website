@@ -1,7 +1,7 @@
 @import "../../styles/constants.scss";
 
 .sub-wrapper {
-  margin: 80px 40px;
+  margin: 80px 20px;
 
   @media screen and (min-width: 1024px) {
     padding: 118px 112px;
@@ -12,31 +12,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     background-color: $mainYellow;
-    padding: 80px 40px;
-    text-align: center;
-
-    @media screen and (min-width: 1024px) {
-      padding: 118px 112px;
-
-      .suscribete {
-        padding: 120px 180px;
-      }
-    }
+    padding: 40px;
+    text-align: left;
 
     .main-title {
       font-family: $cardoFont;
-      font-size: 45px;
+      font-size: 40px;
       line-height: 120%;
       color: $darkBlue;
     }
 
     .sub-desc {
       font-family: $interFont;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 180%;
       color: $darkBlue;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 118px 112px;
+      text-align: center;
+
+      .suscribete {
+        padding: 120px 180px;
+
+        .main-title {
+          font-size: 45px;
+        }
+        .sub-desc {
+          font-size: 20px;
+        }
+      }
     }
 
     .input-wrapper {
