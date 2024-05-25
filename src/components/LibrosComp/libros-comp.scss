@@ -118,6 +118,7 @@
 
 // Book Item
 .book-wrapper {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,17 +126,10 @@
   width: 100%;
   transition: all 0.3s ease-in-out;
 
-  &:hover {
-    .book-img {
-      opacity: 0.8;
-      cursor: pointer;
-    }
-  }
-
   .book-img {
     min-width: 178px;
     max-width: 350px;
-    height: 278px;
+    // max-height: 278px;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -143,6 +137,13 @@
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  &:hover {
+    .book-img {
+      opacity: 0.8;
+      cursor: pointer;
+    }
   }
 
   .book-title {

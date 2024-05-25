@@ -1,22 +1,24 @@
 "use client";
 
-import Image from "next/image";
 import "./libro.scss";
-
-import { useRouter, usePathname } from "next/navigation";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import Layout from "@/components/Layout/Layout";
 import LibrosComponent from "@/components/LibrosComp";
 
 import { books } from "@/components/LibrosComp/books";
-import Link from "next/link";
 
 function BookPage() {
-  const router = useRouter();
   const pathname = usePathname();
 
   const libro = pathname.replace("/libros/", "");
   const book = books.find((book) => book.id === libro);
+
+  const EMAIL = process.env.EMAIL;
+  const SUBJECT = `Pedido de ${book?.title} desde tu pagina web`;
+  const BODY = `Hola Carlos, me gustaría comprar tu libro, ${book?.title} y obtener más información sobre el proceso`;
 
   return (
     <Layout type="blue">
@@ -28,11 +30,21 @@ function BookPage() {
             <p className="book-desc">{book?.description}</p>
             <Link
               className="button bubble-button"
-              href={book?.link ? book.link : ""}
+              href={
+                book?.sellOnContact
+                  ? `mailto:${EMAIL}?subject=${encodeURIComponent(
+                      SUBJECT
+                    )}&body=${encodeURIComponent(BODY)}`
+                  : book?.link
+                  ? book.link
+                  : ""
+              }
               target="_blank"
             >
               <div className="btn btn-three">
-                <span>COMPRAR</span>
+                <span>
+                  {book?.sellOnContact ? "Contáctanos para obtener" : "COMPRAR"}
+                </span>
               </div>
             </Link>
 
@@ -43,7 +55,7 @@ function BookPage() {
                   return (
                     <div key={index} className="details-item">
                       <p className="name">{detail.type}:</p>
-                      <p className="desc">{detail.content}</p>
+                      <p className="value">{detail.content}</p>
                     </div>
                   );
                 })}

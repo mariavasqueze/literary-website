@@ -20,7 +20,7 @@
     .book-info {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: start;
       justify-content: space-evenly;
       max-width: 100%;
       gap: 40px;
@@ -42,6 +42,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+        font-style: italic;
       }
       .book-desc {
         font-family: $interFont;
@@ -104,13 +105,17 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         width: auto;
         object-fit: contain;
-        min-height: 25rem;
+        min-height: 20rem;
 
         @media screen and (min-width: 1024px) {
           min-height: 45rem;
         }
       }
     }
+  }
+
+  .button {
+    align-self: center;
   }
   .btn {
     line-height: 50px;

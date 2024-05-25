@@ -47,6 +47,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    position: relative;
 
     .main-img {
       max-height: 400px;
@@ -56,9 +57,28 @@
 
     @media screen and (min-width: 1024px) {
       padding: 120px 112px 0px;
-      gap: 140px;
+      gap: 80px;
       .main-img {
         max-height: 550px;
+      }
+    }
+
+    .social-media {
+      position: relative;
+      .social-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
+        border-radius: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3),
+          0 15px 20px rgba(0, 0, 0, 0.2), 0 -3px 1px rgba(0, 0, 0, 0.1) inset;
+
+        &:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3),
+            0 20px 30px rgba(0, 0, 0, 0.2), 0 -4px 2px rgba(0, 0, 0, 0.1) inset;
+        }
       }
     }
 

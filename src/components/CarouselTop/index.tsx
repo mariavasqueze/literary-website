@@ -16,7 +16,7 @@ function CarouselTop() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 1.2,
     slidesToScroll: 1,
   };
   return (
@@ -46,7 +46,7 @@ function BookCarouselItem({ book }: BookItemProps) {
         width={200}
         height={200}
         onClick={() => {
-          router.push(`/libros/${book.link}`);
+          router.push(`/libros/${book.id}`);
         }}
       />
     </div>

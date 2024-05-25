@@ -11,6 +11,7 @@
 
 .slick-list {
   width: 100%;
+  padding-left: 100px;
 }
 
 .slick-initialized .slick-slide {
@@ -28,7 +29,7 @@
 
   .item-main-img {
     padding: 40px 0px;
-    object-fit: cover;
+    object-fit: contain;
     transform: translateX(12%);
     height: 500px;
     width: 80%;

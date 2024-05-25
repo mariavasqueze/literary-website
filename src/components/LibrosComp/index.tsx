@@ -17,10 +17,11 @@ export type Book = {
   title: string;
   shortDesc: string;
   description: string;
-  link: string;
+  link: string | undefined;
   category: string;
   award?: string;
   details?: any[];
+  sellOnContact?: boolean;
 };
 
 export interface BookItemProps {

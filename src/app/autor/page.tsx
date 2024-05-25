@@ -1,9 +1,10 @@
 import "./autor.scss";
 import Image from "next/image";
+import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 
 import LibrosComponent from "@/components/LibrosComp";
 import Layout from "@/components/Layout/Layout";
-import Link from "next/link";
 
 function AutorPage() {
   const EMAIL = "vasquezzawadzkicarlos@gmail.com";
@@ -27,6 +28,20 @@ function AutorPage() {
             width={800}
             height={600}
           />{" "}
+          <div className="social-media">
+            <SocialIcon
+              url="https://www.instagram.com/carlos_vasquez_zawadzki?igsh=MTc4dTVyMGE3bTM2cA=="
+              className="social-icon"
+            />
+            <SocialIcon
+              url="https://www.facebook.com/share/whSgGA2Vmp3paxrb/?mibextid=LQQJ4d"
+              className="social-icon"
+            />
+            <SocialIcon
+              url={`mailto:${process.env.EMAIL}`}
+              className="social-icon"
+            />
+          </div>
           <div className="autor-desc">
             <h3 className="autor-name">Nombre del Autor</h3>
             <p className="normal-text">
