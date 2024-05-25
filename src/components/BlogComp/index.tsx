@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./blog-comp.scss";
 import { articles } from "./articles";
 import { BlogItem } from "../BlogItem";

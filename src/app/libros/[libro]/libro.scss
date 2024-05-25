@@ -6,17 +6,29 @@
   background-color: #1b37640b;
 
   .top-section {
-    padding: 95px 112px 0px;
+    padding: 60px 20px 0px;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     gap: 30px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 95px 112px 0px;
+      flex-direction: row;
+    }
 
     .book-info {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      max-width: 40%;
+      max-width: 100%;
+      gap: 40px;
+
+      @media screen and (min-width: 1024px) {
+        max-width: 40%;
+        gap: 00px;
+      }
 
       .book-title {
         font-size: 40px;
@@ -53,9 +65,9 @@
 
       .details-item {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-direction: column;
+        align-items: start;
+        // flex-wrap: wrap;
 
         .name {
           font-family: $interFont;
@@ -79,15 +91,24 @@
       height: 100%;
       background-color: #fff;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      padding: 70px;
-      max-width: 60%;
+      padding: 30px;
       overflow: hidden;
+      max-width: 100%;
+
+      @media screen and (min-width: 1024px) {
+        max-width: 60%;
+        padding: 70px;
+      }
 
       .cover-img {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        min-height: 45rem;
         width: auto;
         object-fit: contain;
+        min-height: 25rem;
+
+        @media screen and (min-width: 1024px) {
+          min-height: 45rem;
+        }
       }
     }
   }

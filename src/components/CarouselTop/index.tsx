@@ -10,7 +10,6 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { books } from "../LibrosComp/books";
 import { BookItemProps } from "../LibrosComp";
-import { url } from "inspector";
 
 function CarouselTop() {
   var settings = {

@@ -55,6 +55,19 @@
       font-family: $interFont;
       font-size: 18px;
       line-height: 180%;
+
+      .leer-mas {
+        display: block;
+        // margin-top: 10px;
+        color: $darkBlue;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          text-decoration: underline;
+          opacity: 0.8;
+          cursor: pointer;
+        }
+      }
     }
     .metrics {
       display: flex;

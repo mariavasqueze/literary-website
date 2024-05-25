@@ -29,6 +29,7 @@ function BookPage() {
             <Link
               className="button bubble-button"
               href={book?.link ? book.link : ""}
+              target="_blank"
             >
               <div className="btn btn-three">
                 <span>COMPRAR</span>

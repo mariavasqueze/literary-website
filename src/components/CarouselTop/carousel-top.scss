@@ -9,12 +9,15 @@
   }
 }
 
+.slick-list {
+  width: 100%;
+}
+
 .slick-initialized .slick-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 34px;
-  //   height: 40rem;
 }
 
 .book-carousel-item {
@@ -26,7 +29,6 @@
   .item-main-img {
     padding: 40px 0px;
     object-fit: cover;
-    // height: 100%;
     transform: translateX(12%);
     height: 500px;
     width: 80%;

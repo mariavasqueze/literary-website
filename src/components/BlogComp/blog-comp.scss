@@ -24,5 +24,9 @@
 
   @media screen and (min-width: 1024px) {
     padding: 145px 112px;
+
+    .articles-wrap {
+      flex-wrap: nowrap;
+    }
   }
 }
